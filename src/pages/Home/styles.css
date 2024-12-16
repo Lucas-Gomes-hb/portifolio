@@ -1,0 +1,20 @@
+/* Fundo e texto base */
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffff7; /* Fundo branco */
+    color: #333; /* Texto principal */
+}
+
+/* Container geral */
+.home-container {
+    text-align: center;
+    display: flex;
+}
+
+.home-container .content{
+    display: block;
+}
+
+

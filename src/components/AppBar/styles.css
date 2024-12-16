@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    border-bottom: 1px solid #dddddd80;
+}
+
+.nav-content {
+    margin:auto 10em auto 10em;
+}
+
+
+.nav-content .name{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-right: 10em;
+    margin-left: 15em;
+}
+
+.nav-content button{
+    border: none;
+    background-color: #fffff7;
+    font-size: 0.9em;
+    font-weight: 500;
+}

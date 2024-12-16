@@ -1,0 +1,93 @@
+.side-container{
+    width: 60px;
+    height: 100dvh;
+    display: block ;
+}
+
+.social-midia a {
+    margin: 0 10px;
+    font-size: 24px; /* Ajusta o tamanho */
+    color: #333; /* Define a cor */
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.social-midia a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+.side-container svg{
+    width: 25px;
+    height: 25px;
+}
+.side-container .social-midia{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+.side-container .site-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 20%;
+}
+.site-controls i {
+    margin: 0 10px;
+    font-size: 24px; /* Ajusta o tamanho */
+    color: #333; /* Define a cor */
+    text-decoration: none;
+    padding: 10px;
+
+}
+/* Container principal */
+.language-selector {
+    cursor: pointer;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+/* Bandeiras circulares */
+.language-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 60px; /* Alinha as bandeiras horizontalmente */
+}
+
+.language-options .flag-icon {
+    font-size: 36px; /* Tamanho das bandeiras */
+    margin: 5px;
+    border-radius: 50%; /* Deixa a bandeira circular */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.language-options .flag-icon:hover {
+    transform: scale(1.1); /* Efeito hover */
+}
+
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .side-container {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .language-options {
+    background-color: #333;
+}
+
+body.dark-mode .language-selector {
+    color: #ffffff;
+}
