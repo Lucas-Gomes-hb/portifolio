@@ -1,0 +1,13 @@
+{
+    "title": "Bienvenido a Mi Portafolio",
+    "subtitle": "Enfocado en {{backend}} y desarrollo de {{apps}}.",
+    "flutterTitle": "Flutter",
+    "flutterText": "Construcción de aplicaciones móviles modernas.",
+    "pythonTitle": "Python",
+    "pythonText": "APIs robustas y soluciones con IA.",
+    "phpTitle": "PHP",
+    "phpText": "Desarrollo web de alto rendimiento.",
+    "webTitle": "Web",
+    "webText": "Experiencia en React y tecnologías modernas."
+  }
+  

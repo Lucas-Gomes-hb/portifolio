@@ -4,7 +4,11 @@ nav{
 }
 
 .nav-content {
-    margin:auto 10em auto 10em;
+    padding-right: 0.7em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
 }
 
 

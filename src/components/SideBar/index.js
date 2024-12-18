@@ -7,7 +7,7 @@ import "./styles.css";
 function Sidebar() {
     const { t, i18n } = useTranslation();
     const [showLanguages, setShowLanguages] = useState(false);
-    const [darkMode, setDarkMode] = useState(false); // Estado para controlar o modo escuro
+    const [darkMode, setDarkMode] = useState(true); // Estado para controlar o modo escuro
 
     const languages = [
         { code: "pt", name: "Português", flag: "BR" },
@@ -25,11 +25,13 @@ function Sidebar() {
         document.body.classList.toggle('dark-mode', darkMode); // Adiciona a classe dark-mode ao body
     };
 
+    const filteredLanguages = languages.filter(lang => lang.code !== i18n.language);
+
     return (
         <div className="side-container">
             <section className="social-midia">
                 <a href="https://www.linkedin.com/in/lucas-gomes-3a7564189/" target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-linkedin"></i>
+                    <i className={`bi bi-linkedin`}></i>
                 </a>
                 <a href="https://www.instagram.com/lucasfigueiredo.gomes/" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-instagram"></i>
@@ -44,28 +46,54 @@ function Sidebar() {
 
             <section className="site-controls">
                 {/* Botão para mostrar as opções de idioma */}
-                <div className="language-selector" onClick={() => setShowLanguages(!showLanguages)}>
-                    <Flag code={i18n.language === 'pt' ? 'BR' : i18n.language === 'en' ? 'US' : 'ES'} style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} />
-                </div>
+                <div
+                    className="language-selector"
+                    onClick={() => setShowLanguages(!showLanguages)}
+                    style={{ position: "relative" }}
+                >
+                    <Flag
+                        code={
+                            i18n.language === "pt"
+                                ? "BR"
+                                : i18n.language === "en"
+                                ? "US"
+                                : "ES"
+                        }
+                        style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            objectFit: "cover",
+                        }}
+                    />
 
-                {/* Opções de idioma (dropdown) */}
-                {showLanguages && (
-                    <div className="language-options">
-                        {languages.map((lang) => (
-                            <span
-                                key={lang.code}
-                                onClick={() => handleLanguageChange(lang.code)}
-                                style={{ cursor: 'pointer', margin: '5px' }}
-                            >
-                                <Flag code={lang.flag} style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} />
-                            </span>
-                        ))}
-                    </div>
-                )}
+                    {/* Dropdown */}
+                    {showLanguages && (
+                        <div className="language-options">
+                            {filteredLanguages.map((lang) => (
+                                <span
+                                    key={lang.code}
+                                    onClick={() => handleLanguageChange(lang.code)}
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    <Flag
+                                        code={lang.flag}
+                                        style={{
+                                            width: "32px",
+                                            height: "32px",
+                                            borderRadius: "50%",
+                                            objectFit: "cover",
+                                        }}
+                                    />
+                                </span>
+                            ))}
+                        </div>
+                    )}
+                </div>
 
                 {/* Ícone de luz para alternar entre os modos claro e escuro */}
                 <div className="theme-toggler" onClick={toggleDarkMode} style={{ marginTop: '20px', cursor: 'pointer' }}>
-                    <i className={`bi ${darkMode ? 'bi-sun' : 'bi-moon'}`} style={{ fontSize: '24px' }}></i>
+                    <i className={`bi ${darkMode ?  'bi-moon' :'bi-sun' }`} style={{ fontSize: '24px' }}></i>
                 </div>
             </section>
         </div>

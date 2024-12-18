@@ -29,7 +29,7 @@ function LogoSVG( {size, stroke, color}) {
 
             {/* Logo Circle */}
             <circle cx="50" cy="50" r="15" stroke={color??"black"} strokeWidth={stroke??"4"} fill="none" />
-            <circle cx="50" cy="50" r={stroke??"4"} fill={color??"black"} />
+            <circle className="center" cx="50" cy="50" r={stroke??"4"} fill={color??"black"} />
 
             {/* Tail */}
             <rect x="48" y="64" width={stroke??"4"} height="20" fill={color??"black"}

@@ -49,14 +49,29 @@
     margin: 10px 0;
 }
 
-/* Bandeiras circulares */
 .language-options {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /* Alinha as bandeiras na horizontal */
     position: absolute;
-    left: 60px; /* Alinha as bandeiras horizontalmente */
+    top: 50%; /* Centraliza verticalmente em relação ao botão */
+    left: 100%; /* Coloca o dropdown à direita do botão */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.language-options span {
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.language-options span:hover {
+    transform: scale(1.1);
 }
 
 .language-options .flag-icon {
@@ -71,23 +86,4 @@
 
 .language-options .flag-icon:hover {
     transform: scale(1.1); /* Efeito hover */
-}
-
-
-/* Estilos para o modo escuro */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-body.dark-mode .side-container {
-    background-color: #1e1e1e;
-}
-
-body.dark-mode .language-options {
-    background-color: #333;
-}
-
-body.dark-mode .language-selector {
-    color: #ffffff;
 }
