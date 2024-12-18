@@ -39,7 +39,7 @@ function Sidebar() {
                 <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-google"></i>
                 </a>
-                <a href="https://wa.me/519925668194" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/51992568194" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-whatsapp"></i>
                 </a>
             </section>

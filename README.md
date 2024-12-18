@@ -76,7 +76,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 If you have any questions or would like to collaborate, feel free to reach out:
 
-- **Email:** your-email@example.com
+- **Email:** lucas.gomes.pessoal@gmail.com
 - **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/lucas-gomes-3a7564189/)
 - **GitHub:** [Your GitHub Profile](https://github.com/Lucas-Gomes-hb)
 
