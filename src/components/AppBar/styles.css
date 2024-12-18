@@ -22,6 +22,12 @@ nav{
 .nav-content button{
     border: none;
     background-color: #fffff7;
-    font-size: 0.9em;
+    font-size: 1em;
+    transition: 0.3s;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-content button:hover{
+    border-bottom: 2px solid #dddddd80;
 }

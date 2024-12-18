@@ -8,14 +8,22 @@ import { ReactComponent as Normal } from "../../assets/normal.svg";
 import { ReactComponent as Wink } from "../../assets/wink.svg";
 
 function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [currentIndex, setCurrentIndex] = useState(0); // Index dos parágrafos
   const [fadeState, setFadeState] = useState("fade-in"); // Estado do fade
   const [currentIcon, setCurrentIcon] = useState(0); // Estado para alternar ícones
   const icons = [Normal, Happy, Wink]; // Array dos ícones SVG
 
-  // Alternar entre os ícones a cada 3 segundos
+  const getParagraphs = () => t("paragraphs", { returnObjects: true });
+
+  const [paragraphs, setParagraphs] = useState(getParagraphs());
+
+  // Atualiza os parágrafos sempre que o idioma for alterado
+  useEffect(() => {
+    setParagraphs(getParagraphs());
+  }, [i18n.language]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIcon((prev) => (prev + 1) % icons.length);
@@ -26,18 +34,12 @@ function Home() {
 
   const CurrentIcon = icons[currentIcon]; // Ícone atual
 
-  // Lista de parágrafos dinâmicos
-  const paragraphs = [
-    "Eu desenvolvo apps mobile para Android e Apple.",
-    "Eu construo sites modernos e responsivos.",
-    "Faço integrações entre sistemas e serviços.",
-    "Desenvolvo AIs para automação inteligente.",
-    "Faço automações para facilitar processos.",
-    "Crio sistemas robustos e escaláveis.",
-    "Faço engenharia de prompt para IA."
-  ];
-
-  const getRandomDelay = () => Math.random() * 5 * 1000; // Delay entre 0 e 5 segundos
+  // const paragraphs = [
+  //   "Desenvolvo aplicativos mobile personalizados com Flutter, atendendo desde soluções de gestão para restaurantes e empresas até apps com inteligência artificial, como assistentes médicos e copilots.",
+  //   "Crio landing pages modernas, sistemas corporativos funcionais e automações inteligentes, incluindo integração de APIs e ERPs, garantindo eficiência e conectividade entre serviços.",
+  //   "Automatizo processos empresariais com tecnologias como chatbots via WhatsApp, agendamentos pelo Google Agenda e controle de mapas usando o Google Maps, facilitando a operação e otimizando recursos.",
+  //   "Ofereço soluções completas e escaláveis com Python, PHP, JavaScript, React, e mais, aplicando também inteligência artificial para análise de dados, reconhecimento de imagem e automações avançadas."
+  // ];
 
   useEffect(() => {
     let fadeOutTimeout;
@@ -46,16 +48,14 @@ function Home() {
     const cycleParagraphs = () => {
       setFadeState("fade-in"); // Inicia o fade-in
 
-      // Após 10 segundos + tempo aleatório, começa o fade-out
       fadeOutTimeout = setTimeout(() => {
         setFadeState("fade-out"); // Inicia o fade-out
 
-        // Espera o tempo do fade-out e muda para o próximo grupo de parágrafos
         nextParagraphTimeout = setTimeout(() => {
-          setCurrentIndex((prev) => (prev + 3) % paragraphs.length);
+          setCurrentIndex((prev) => (prev + 1) % paragraphs.length); // Incrementa o índice
           cycleParagraphs(); // Reinicia o ciclo
         }, 2000); // Tempo do fade-out (2 segundos)
-      }, 3000 + getRandomDelay()); // 10 segundos + tempo aleatório
+      }, 5000); // Tempo de exibição do parágrafo (5 segundos)
     };
 
     cycleParagraphs(); // Inicia o ciclo
@@ -72,34 +72,25 @@ function Home() {
       <div className="home-container">
         <Sidebar />
         <div className="content">
-          {/* Balão de fala */}
           <section className="texts">
             <div className="speech-bubble">
-              <p>Olá, <br />Me chamo</p>
+              <p>
+                {t("introduction.greeting")} <br />
+                {t("introduction.name_intro")}
+              </p>
             </div>
 
-            {/* Nome com animação de fontes */}
-            <h1 className="animated-name">Lucas Gomes</h1>
+            <h1 className="animated-name">{t("introduction.name")}</h1>
 
-            {/* Parágrafos dinâmicos exibidos de 3 em 3 */}
             <div className={`fade-paragraph ${fadeState}`}>
-              {paragraphs
-                .slice(currentIndex, currentIndex + 3)
-                .map((text, index) => (
-                  <p
-                    key={index}
-                    className={`dynamic-paragraph ${index === 1 ? "middle-paragraph" : ""
-                      }`}
-                  >
-                    {text}
-                  </p>
-                ))}
+              <p className="dynamic-paragraph">{paragraphs[currentIndex]}</p>
             </div>
           </section>
 
+
           <section>
             <div className="svgs">
-            <CurrentIcon className="animated-svg svg" />
+              <CurrentIcon className="animated-svg svg" />
             </div>
           </section>
         </div>

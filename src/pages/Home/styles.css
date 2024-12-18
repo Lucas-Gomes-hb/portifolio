@@ -48,6 +48,11 @@ body.dark-mode rect {
 
 }
 
+body.dark-mode .nav-content button {
+    color: #fffff7;
+    background-color: #1e1e1e;
+}
+
 body.dark-mode .svg path {
     color: #ffffff;
     fill: white;
@@ -164,9 +169,7 @@ body.dark-mode .center {
     color: #555;
 }
 
-.middle-paragraph {
-    text-indent: 30px;
-}
+
 
 .svgs path {
     fill: #333;
@@ -199,4 +202,13 @@ body.dark-mode .center {
     100% {
         transform: translateX(-10px) rotate(-2deg);
     }
+}
+
+.fade-paragraph p {
+    text-indent: 30px;
+    margin-top: 1em;
+}
+
+.middle-paragraph {
+    margin-left: 10px;
 }

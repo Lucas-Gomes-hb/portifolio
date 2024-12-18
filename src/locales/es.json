@@ -1,13 +1,13 @@
 {
-    "title": "Bienvenido a Mi Portafolio",
-    "subtitle": "Enfocado en {{backend}} y desarrollo de {{apps}}.",
-    "flutterTitle": "Flutter",
-    "flutterText": "Construcción de aplicaciones móviles modernas.",
-    "pythonTitle": "Python",
-    "pythonText": "APIs robustas y soluciones con IA.",
-    "phpTitle": "PHP",
-    "phpText": "Desarrollo web de alto rendimiento.",
-    "webTitle": "Web",
-    "webText": "Experiencia en React y tecnologías modernas."
-  }
-  
+  "introduction": {
+    "greeting": "Hola,",
+    "name_intro": "Me llamo",
+    "name": "Lucas Gomes"
+  },
+  "paragraphs": [
+    "Desarrollo aplicaciones móviles personalizadas con Flutter, desde soluciones de gestión para restaurantes y empresas hasta aplicaciones con inteligencia artificial, como asistentes médicos y copilots.",
+    "Creo landing pages modernas, sistemas corporativos funcionales y automatizaciones inteligentes, incluidas integraciones de APIs y ERPs, garantizando eficiencia y conectividad entre servicios.",
+    "Automatizo procesos empresariales con tecnologías como chatbots de WhatsApp, programación en Google Calendar y gestión de mapas con Google Maps, optimizando recursos y facilitando operaciones.",
+    "Ofrezco soluciones completas y escalables con Python, PHP, JavaScript, React, y más, aplicando inteligencia artificial para análisis de datos, reconocimiento de imágenes y automatizaciones avanzadas."
+  ]
+}
