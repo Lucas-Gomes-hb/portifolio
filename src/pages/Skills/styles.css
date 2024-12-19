@@ -1,0 +1,15 @@
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    /* min-height: 100vh; */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}

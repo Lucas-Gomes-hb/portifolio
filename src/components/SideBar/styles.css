@@ -1,7 +1,13 @@
 .side-container{
     width: 60px;
-    height: 100dvh;
+    height: 93.5dvh;
     display: block ;
+    position: sticky;
+    top: 4.1em;
+}
+
+.social-midia{
+    margin-top: 5em;
 }
 
 .social-midia a {
