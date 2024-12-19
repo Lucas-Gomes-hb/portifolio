@@ -5,9 +5,11 @@ import "./styles.css"; // Estilo específico para o card
 function SkillCard({ icon, title, description }) {
     return (
         <div className="skill-card">
-            <img src={icon} alt={title} className="skill-icon" />
-            <h3 className="skill-title">{title}</h3>
-            <p className="skill-description">{description}</p>
+            {icon}
+            <section>
+                <h3 className="skill-title">{title}</h3>
+                <p className="skill-description">{description}</p>
+            </section>
         </div>
     );
 }

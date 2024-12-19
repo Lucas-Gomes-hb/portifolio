@@ -70,6 +70,15 @@ body.dark-mode .center {
     fill: white;
 }
 
+body.dark-mode .skill-card{
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .skill-card h3{
+    color: #fff;
+}
+
 .home-container {
     display: flex;
     justify-content: flex-start;
