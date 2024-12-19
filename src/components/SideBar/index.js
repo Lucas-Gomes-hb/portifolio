@@ -56,7 +56,7 @@ function Sidebar() {
                 <a href="https://www.instagram.com/lucasfigueiredo.gomes/" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-instagram"></i>
                 </a>
-                <a href="https://wa.me/51992568194" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5551992568194" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-whatsapp"></i>
                 </a>
             </section>

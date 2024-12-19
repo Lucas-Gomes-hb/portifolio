@@ -9,5 +9,39 @@
     "Creo landing pages modernas, sistemas corporativos funcionales y automatizaciones inteligentes, incluidas integraciones de APIs y ERPs, garantizando eficiencia y conectividad entre servicios.",
     "Automatizo procesos empresariales con tecnologías como chatbots de WhatsApp, programación en Google Calendar y gestión de mapas con Google Maps, optimizando recursos y facilitando operaciones.",
     "Ofrezco soluciones completas y escalables con Python, PHP, JavaScript, React, y más, aplicando inteligencia artificial para análisis de datos, reconocimiento de imágenes y automatizaciones avanzadas."
-  ]
+  ],
+  "skills": {
+    "flutter": {
+      "title": "Flutter",
+      "description": "He desarrollado varias aplicaciones con Flutter, incluidas aplicaciones para la gestión de pedidos (delivery e indoor), integración con inteligencia artificial para chatbots, sistemas de control de inventarios y más. Flutter es mi principal habilidad, y cualquier solución que necesites puede ser creada con este framework."
+    },
+    "python": {
+      "title": "Python",
+      "description": "He desarrollado numerosas APIs utilizando Flask y FastAPI, he implementado servicios integrados con Azure Functions y he trabajado con inteligencia artificial y estructuración de datos dispersos. Python es una de las herramientas más versátiles en mi conocimiento."
+    },
+    "azure": {
+      "title": "Azure",
+      "description": "Azure es una de mis principales herramientas. He desarrollado diversos servicios con Azure Functions, utilicé Cosmos DB, Azure Applications y me enfoqué en la escalabilidad. También gestioné repositorios y procesos utilizando Azure DevOps."
+    },
+    "mysql": {
+      "title": "MySQL",
+      "description": "Fue la primera base de datos SQL que aprendí. He desarrollado y expandido muchos sistemas que usaban MySQL, incluidos trabajos con GeoSQL en diversas aplicaciones."
+    },
+    "php": {
+      "title": "PHP",
+      "description": "Fue el primer lenguaje de programación que aprendí. Con PHP, creé APIs para consumo general en aplicaciones heredadas e integré numerosas aplicaciones y sitios web."
+    },
+    "react": {
+      "title": "React",
+      "description": "Tengo experiencia desarrollando landing pages, sistemas de gestión (CRM), integraciones de APIs con ERPs y utilizando React como el principal consumidor de estas APIs."
+    },
+    "postgresql": {
+      "title": "PostgreSQL",
+      "description": "PostgreSQL es un lenguaje SQL robusto. Con el soporte de sistemas Azure, implementé varias soluciones escalables y eficientes utilizando esta base de datos."
+    },
+    "aws": {
+      "title": "AWS",
+      "description": "Tengo experiencia en la creación y mantenimiento de máquinas virtuales en AWS, así como en la gestión y escalabilidad de bases de datos y servicios en la plataforma."
+    }
+  }
 }

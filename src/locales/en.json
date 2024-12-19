@@ -9,5 +9,39 @@
     "I create modern landing pages, functional corporate systems, and smart automations, including API and ERP integrations, ensuring efficiency and seamless service connectivity.",
     "I automate business processes with technologies such as WhatsApp chatbots, Google Calendar scheduling, and map management using Google Maps, streamlining operations and optimizing resources.",
     "I offer complete and scalable solutions with Python, PHP, JavaScript, React, and more, also applying artificial intelligence for data analysis, image recognition, and advanced automation."
-  ]
+  ],
+  "skills": {
+    "flutter": {
+      "title": "Flutter",
+      "description": "I have developed various apps using Flutter, including order management apps (delivery and indoor), AI-integrated chatbots, stock control systems, and more. Flutter is my primary skill, and any solution you need can be created with this framework."
+    },
+    "python": {
+      "title": "Python",
+      "description": "I have built numerous APIs using Flask and FastAPI, implemented services with Azure Functions, and worked with artificial intelligence and dispersed data structuring. Python is one of the most versatile tools in my knowledge."
+    },
+    "azure": {
+      "title": "Azure",
+      "description": "Azure is one of my key tools. I have developed various services using Azure Functions, utilized Cosmos DB, Azure Applications, and focused on scalability. I also managed repositories and processes using Azure DevOps."
+    },
+    "mysql": {
+      "title": "MySQL",
+      "description": "This was the first SQL database I learned. I have developed and expanded many systems using MySQL, including GeoSQL functionalities in various applications."
+    },
+    "php": {
+      "title": "PHP",
+      "description": "This was the first programming language I learned. With PHP, I created APIs for general consumption in legacy applications and integrated numerous apps and websites."
+    },
+    "react": {
+      "title": "React",
+      "description": "I have experience developing landing pages, management systems (CRMs), API integrations with ERPs, and using React as the main consumer for these APIs."
+    },
+    "postgresql": {
+      "title": "PostgreSQL",
+      "description": "PostgreSQL is a robust SQL language. With Azure systems support, I implemented various scalable and efficient solutions using this database."
+    },
+    "aws": {
+      "title": "AWS",
+      "description": "I have experience creating and maintaining virtual machines on AWS, as well as managing and scaling databases and services on the platform."
+    }
+  }
 }
