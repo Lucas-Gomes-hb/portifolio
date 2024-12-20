@@ -27,6 +27,7 @@ function Footer() {
     };
 
     const handleEmailCopy = () => {
+        console.log(window.outerWidth)
         navigator.clipboard.writeText("lucas.gomes.pessoal@gmail.com") // Copia o e-mail
             .then(() => {
                 setSnackbarVisible(true); // Exibe o Snackbar
