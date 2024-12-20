@@ -15,3 +15,29 @@
     margin: 0 auto; 
     margin-bottom: 10em;
 }
+
+@media (max-width: 600px) {
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo */
+        grid-template-rows: repeat(auto-fit, minmax(300px, 300px));
+        gap: 20px;
+        padding: 0 !important;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto; 
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+
+    .side-container {
+        display: none;
+        width: 10px !important;
+    }
+}

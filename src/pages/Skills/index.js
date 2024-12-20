@@ -6,8 +6,11 @@ import "./styles.css";
 import { SiFlutter, SiReact, SiPython, SiPhp, SiMysql, SiPostgresql } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
+import Footer from "../../components/Footer";
 
 function Skills() {
+    const isMobile = window.outerWidth <= 768;
+
     const skills = [
         { skillKey: "flutter", icon: <SiFlutter className="skill-icon" /> },
         { skillKey: "python", icon: <SiPython className="skill-icon" /> },
@@ -23,7 +26,7 @@ function Skills() {
         <>
             <Navbar />
             <div className="skill-container">
-                <Sidebar />
+                {!isMobile && <Sidebar />}
                 <section className="skills-grid">
                     {skills.map((skill, index) => (
                         <SkillCard
@@ -33,6 +36,7 @@ function Skills() {
                         />
                     ))}
                 </section>
+                {isMobile && <Footer/>}
             </div>
         </>
     );

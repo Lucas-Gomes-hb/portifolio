@@ -45,3 +45,24 @@
     width: 30em;
 
 }
+
+@media (max-width:600px) {
+    .skill-card {
+        margin-left: 10px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .skill-icon {
+        width: 9em;
+        height: 9em;
+        margin-right: 1em;
+    }
+
+    .skill-card section{
+        display: flex;
+        flex-direction: column;
+        width: 30em;
+    
+    }
+}
