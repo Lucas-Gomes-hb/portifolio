@@ -235,7 +235,7 @@ body.dark-mode .skill-card h3 {
         justify-content: space-between;
         align-content: space-between;
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
     }
 
     .content {
@@ -269,6 +269,7 @@ body.dark-mode .skill-card h3 {
 
     .texts .speech-bubble {
         font-size: 14px;
+        margin-left: 20px;
     }
 
     .texts .animated-name {
@@ -276,9 +277,9 @@ body.dark-mode .skill-card h3 {
     }
 
     .texts .fade-paragraph p{
-        font-size: 0.8em !important;
+        font-size: 0.9em !important;
         line-height: 1.5;
-        margin-right: 2em;
+        /* margin-right: 2em; */
     }
 
     .svgs {
@@ -289,8 +290,8 @@ body.dark-mode .skill-card h3 {
     }
 
     .svgs svg {
-        height: 80%;
-        width: 80%;
+        height: 90%;
+        width: 90%;
     }
 
     .side-container {
