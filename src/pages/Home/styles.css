@@ -70,12 +70,12 @@ body.dark-mode .center {
     fill: white;
 }
 
-body.dark-mode .skill-card{
+body.dark-mode .skill-card {
     background-color: #333;
     color: #fff;
 }
 
-body.dark-mode .skill-card h3{
+body.dark-mode .skill-card h3 {
     color: #fff;
 }
 
@@ -220,4 +220,84 @@ body.dark-mode .skill-card h3{
 
 .middle-paragraph {
     margin-left: 10px;
+}
+
+.footer-icons {
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    .content {
+        position: relative;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 85dvh;
+    }
+
+    .texts {
+        padding-top: 1em !important;
+        padding-left: 1em !important;
+        /* padding: 1em; */
+        margin-top: 20px;
+        width: 94% !important;
+    }
+
+    .speech-bubble::after {
+        content: "";
+        position: absolute;
+        bottom: -2.4em;
+        left: 30px;
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-color: #333 transparent transparent transparent;
+    }    
+
+    .texts .speech-bubble {
+        font-size: 14px;
+    }
+
+    .texts .animated-name {
+        font-size: 2.3em;
+    }
+
+    .texts .fade-paragraph p{
+        font-size: 0.8em !important;
+        line-height: 1.5;
+        margin-right: 2em;
+    }
+
+    .svgs {
+        margin: 20px auto;
+        width: 25em;
+        height: 25em;
+    }
+
+    .svgs svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .side-container {
+        display: none;
+        width: 10px !important;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f5f5f5;
+        width: 100%;
+    }
 }

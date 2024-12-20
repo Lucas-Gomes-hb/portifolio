@@ -6,6 +6,7 @@ import Sidebar from "../../components/SideBar";
 import { ReactComponent as Happy } from "../../assets/happy.svg";
 import { ReactComponent as Normal } from "../../assets/normal.svg";
 import { ReactComponent as Wink } from "../../assets/wink.svg";
+import Footer from "../../components/Footer";
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -18,6 +19,8 @@ function Home() {
   const getParagraphs = () => t("paragraphs", { returnObjects: true });
 
   const [paragraphs, setParagraphs] = useState(getParagraphs());
+
+  const isMobile = window.outerWidth <= 768;
 
   // Atualiza os parágrafos sempre que o idioma for alterado
   useEffect(() => {
@@ -33,13 +36,6 @@ function Home() {
   }, []);
 
   const CurrentIcon = icons[currentIcon]; // Ícone atual
-
-  // const paragraphs = [
-  //   "Desenvolvo aplicativos mobile personalizados com Flutter, atendendo desde soluções de gestão para restaurantes e empresas até apps com inteligência artificial, como assistentes médicos e copilots.",
-  //   "Crio landing pages modernas, sistemas corporativos funcionais e automações inteligentes, incluindo integração de APIs e ERPs, garantindo eficiência e conectividade entre serviços.",
-  //   "Automatizo processos empresariais com tecnologias como chatbots via WhatsApp, agendamentos pelo Google Agenda e controle de mapas usando o Google Maps, facilitando a operação e otimizando recursos.",
-  //   "Ofereço soluções completas e escaláveis com Python, PHP, JavaScript, React, e mais, aplicando também inteligência artificial para análise de dados, reconhecimento de imagem e automações avançadas."
-  // ];
 
   useEffect(() => {
     let fadeOutTimeout;
@@ -70,7 +66,7 @@ function Home() {
     <>
       <Navbar />
       <div className="home-container">
-        <Sidebar />
+        {!isMobile && <Sidebar />}
         <div className="content">
           <section className="texts">
             <div className="speech-bubble">
@@ -94,7 +90,7 @@ function Home() {
             </div>
           </section>
         </div>
-
+        {isMobile && <Footer/>}
       </div>
     </>
   );

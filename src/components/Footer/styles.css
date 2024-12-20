@@ -1,0 +1,44 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5em;
+}
+
+.footer-container .social-midia{
+    width: 70%;
+    margin-top: 0 !important;
+    align-self: center;
+}
+
+.footer-container .social-midia a {
+    margin: 0 10px;
+    font-size: 20px; /* Ajusta o tamanho */
+    color: #333; /* Define a cor */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer-container .site-controls{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+}
+
+.footer-container .language-selector{
+    margin-right: 0.5em;
+    margin-top: 5px !important;
+    margin-bottom: 0 !important;
+}
+
+.footer-container .language-options{
+    top: -130%;
+    left: -75%;
+    flex-direction: column;
+}
+
+.footer-container .theme-toggler{
+    margin-top: 0 !important;
+}
