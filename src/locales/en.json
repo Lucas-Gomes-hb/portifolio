@@ -43,5 +43,8 @@
       "title": "AWS",
       "description": "I have experience creating and maintaining virtual machines on AWS, as well as managing and scaling databases and services on the platform."
     }
+  },
+  "navbar": {
+    "skills": "Skills"
   }
 }

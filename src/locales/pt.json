@@ -43,5 +43,8 @@
       "title": "AWS",
       "description": "Tenho experiência na criação e manutenção de máquinas virtuais na AWS, bem como no gerenciamento e escalabilidade de bancos de dados e serviços na plataforma."
     }
+  },
+  "navbar": {
+    "skills": "Habilidades"
   }
 }
