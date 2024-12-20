@@ -234,6 +234,7 @@ body.dark-mode .skill-card h3 {
         justify-content: flex-start;
         align-items: flex-start;
         width: 100vw;
+        height: 100%;
     }
 
     .content {
@@ -242,7 +243,8 @@ body.dark-mode .skill-card h3 {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 85dvh;
+        height: 100%;
+
     }
 
     .texts {
@@ -250,7 +252,7 @@ body.dark-mode .skill-card h3 {
         padding-left: 1em !important;
         /* padding: 1em; */
         margin-top: 20px;
-        width: 94% !important;
+        width: 92% !important;
     }
 
     .speech-bubble::after {
@@ -279,14 +281,15 @@ body.dark-mode .skill-card h3 {
     }
 
     .svgs {
-        margin: 20px auto;
-        width: 93%;
+        /* margin: 20px auto; */
+        margin: 0;
+        width: 90%;
         height: 93%;
     }
 
     .svgs svg {
-        height: 100%;
-        width: 100%;
+        height: 80%;
+        width: 80%;
     }
 
     .side-container {
